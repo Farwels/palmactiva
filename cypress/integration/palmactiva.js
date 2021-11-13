@@ -4,6 +4,7 @@ describe('My First Test', () => {
         for (i = 0; i < 5 ; i++) { 
             cy.visit('https://vals.palmaactiva.com/coupon-checkout/ag9sb2NhbG1hcmtldC1wcm9yIwsSBXN0b3JlGICAgPb1_6QKDAsSBGl0ZW0YgICAttOmxwoM')
 
+            cy.wait(1000)
             cy.get('[id=firstname]').type('Carlos Miguel', {force: true})
             cy.get('[id=lastname]').type('Gost Ramis', {force: true})
             cy.get('[id=nif]').type('43189483Z', {force: true})
